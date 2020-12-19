@@ -1,5 +1,7 @@
 var slideIndex = 1;
 let aut = 0;
+let rel = 0;
+let com = 0;
 
 window.onload = function() {
 
@@ -16,7 +18,6 @@ window.onload = function() {
     start.addEventListener('click', startTest);
     function startTest() {
         audio.play();
-        aut += 1;
         console.log(aut);
         plusSlides(1);
     }
@@ -26,8 +27,28 @@ window.onload = function() {
     var next_3 = document.getElementById('next_3'); next_3.addEventListener('click', Next);
     var next_4 = document.getElementById('next_4'); next_4.addEventListener('click', Next);
     function Next() {
-        aut += 1; console.log(aut); plusSlides(1);
+        console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);
     }
+
+    // Page 5 : rel1, m = 2.938, s = 0.666
+    var rel1s1 = document.getElementById('rel1s1'); rel1s1.addEventListener('click', Rel1s1);
+    var rel1s2 = document.getElementById('rel1s2'); rel1s2.addEventListener('click', Rel1s2);
+    var rel1s3 = document.getElementById('rel1s3'); rel1s3.addEventListener('click', Rel1s3);
+    var rel1s4 = document.getElementById('rel1s4'); rel1s4.addEventListener('click', Rel1s4);
+    function Rel1s1() {rel += normalize(1, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Rel1s2() {rel += normalize(2, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Rel1s3() {rel += normalize(3, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Rel1s4() {rel += normalize(4, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+
+    // Page 6 : rel1, m = 3.04, s = 0.642
+    var com2s1 = document.getElementById('com2s1'); com2s1.addEventListener('click', Com2s1);
+    var com2s2 = document.getElementById('com2s2'); com2s2.addEventListener('click', Com2s2);
+    var com2s3 = document.getElementById('com2s3'); com2s3.addEventListener('click', Com2s3);
+    var com2s4 = document.getElementById('com2s4'); com2s4.addEventListener('click', Com2s4);
+    function Com2s1() {com += normalize(1, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Com2s2() {com += normalize(2, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Com2s3() {com += normalize(3, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Com2s4() {com += normalize(4, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
 
 };
 
