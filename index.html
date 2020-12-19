@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>몽실몽실 나의 구름이야기</title>
 
-    <link href="test/css/slidetest.css" rel="stylesheet">
     <link href="test/css/layout.css" rel="stylesheet">
+    <link href="test/css/page0_start.css" rel="stylesheet">
     <link href="test/css/page1_intro1.css" rel="stylesheet">
+    <link href="test/css/page2_intro2.css" rel="stylesheet">
+    <link href="test/css/page3_intro3.css" rel="stylesheet">
+    <link href="test/css/page4_intro4.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@100&display=swap" rel="stylesheet">
     
     <style>
@@ -30,7 +34,7 @@
     </div>
     <div class="testQ">
 
-        <div class="mySlides fade">
+        <div class="mySlides fade"> <!--0페이지-->
           <div class="Image">
             <div class="Cover1">
               <img src="test/media/logo.png", alt="Cover_Logo", width="280", height="210">
@@ -40,11 +44,11 @@
             </div>
           </div>
           <div class="StartButton">
-            <button id="start" onclick="plusSlides(1)">꿈 꾸러 가기</button>
+            <button id="start">꿈 꾸러 가기</button>
           </div>
         </div>
         
-        <div class="mySlides fade">
+        <div class="mySlides fade"> <!--1페이지-->
           <div class="IntroText">*BGM이 재생되는 중!!*<br><br>※ 현재 당신의 모습을 가장 잘 묘사하는<br>답변을 선택해주세요!<br><br>※ 스크롤을 끝까지 내려주세요!! &gt . &lt</div>
           <div class="Page1_Coc">
             <img src="test/media/1_co.png", alt="Cover_Coc", width="260", height="194">
@@ -54,18 +58,72 @@
           <div class="z2">Z</div>
           <div class="z3">Z</div>
           <div class="NextButton">
-            <button id="next" onclick="plusSlides(1)">다음 이야기</button>
+            <button id="next">다음 이야기</button>
           </div>
         </div>
         
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <div class="text">Caption Three</div>
+        <div class="mySlides fade"> <!--2페이지-->
+          <div class="IntroText_3">시간이 얼마나 흘렀을까...</div>
+          <div class="IntroText_4">몽글몽글 피어난 구름이<br>감싸는 느낌이 드는군요.</div>
+          <div class="Page2_Cloud">
+            <img src="test/media/cloud_title.png", alt="Cover_Cloud", width="260", height="194">
+          </div>
+          <div class="NextButton_2">
+            <button id="next_2">다음 이야기</button>
+          </div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <div class="text">Caption Four</div>
+        <div class="mySlides fade"> <!--3페이지-->
+          <div class="IntroText_5">아닛, 눈 앞에<br>푹신푹신한 구름으로 뒤덮인<br>구름마을이 펼쳐져 있습니다.</div>
+          <div class="IntroText_6">구름마을의 주민들도 보이는군요!</div>
+          <div class="Dialogue_1">
+            <svg width="180px", height="80px" id="ball_1">
+              <image width="180" height="80" xlink:href="test/media/dialogue.svg" preserveAspectRatio="none"></image>
+              <!--<object type="image/svg+xml" data="test/media/dialogue.svg" class="dialogue_1" width="160" height="60"></object>-->
+            </svg>
+            <div class="dialogue_1">안녕!<br>구름마을에 온 것을 환영해!</div>
+          </div>
+          <div class="Page3_Cloud">
+            <img src="test/media/cloud_title.png", alt="cloud_title", width="260", height="195">
+          </div>
+          <div class="Page3_Cloud_Hello">
+            <img src="test/media/cloud_hello.png", alt="cloud_hello", width="226", height="156">
+          </div>
+          <div class="NextButton_3">
+            <button id="next_3">다음 이야기</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--4페이지-->
+          <div class="Dialogue_2">
+            <svg width="210px", height="80px" id="ball_2">
+              <image width="210" height="80" xlink:href="test/media/dialogue.svg" preserveAspectRatio="none"></image>
+            </svg>
+            <div class="dialogue_2">구름마을이라니,<br>이곳 정말 아름답다!!</div>
+          </div>
+          <div class="Dialogue_3">
+            <svg width="210px", height="95px" id="ball_3">
+              <image width="210" height="95" xlink:href="test/media/dialogue.svg" preserveAspectRatio="none"></image>
+            </svg>
+            <div class="dialogue_3">그렇게 말해주어서 기뻐!<br>혹시 배고프지는 않니?<br>널 저녁 식사에 초대하고 싶어!</div>
+          </div>
+          <div class="Page4_Cloud_Hello">
+            <img src="test/media/cloud_hello.png", alt="cloud_hello", width="240", height="183">
+          </div>
+          <div class="IntroText_7">당신은 구름마을 주민들의<br>저녁 식사에 초대되어<br>즐거운 시간을 보냈습니다.</div>
+          <div class="IntroText_8">즐거운 시간을 보내던 중,<br>당신은 구름마을 주민들의<br>고민을 듣게 됩니다.</div>
+          <div class="IntroText_9" style="background-color: #ffffff">"겨울을 나기 위해 식량을 구하러 가야 하는데<br>비를 내리고 천둥을 치는 악당이 있어서 고민이야.<br>곧 악당을 물리치러 갈 건데<br>걱정이 이만저만이 아니야ㅜㅜ</div>
+          <div class="NextButton_4">
+            <button id="next_4">다음 이야기</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--5페이지-->
+          <div class="text">6</div>
+        </div>
+
+        <div class="mySlides fade"> <!--6페이지-->
+          <div class="text">7</div>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
