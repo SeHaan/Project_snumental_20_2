@@ -1,0 +1,92 @@
+.Image {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    opacity: 0;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.Cover1 {
+    left: 26px;
+    top: 110px;
+    z-index: 1;
+    position: absolute;
+}
+
+.Cover2 {
+    left: 20px;
+    top: 123px;
+    z-index: 0;
+    position: absolute;
+}
+
+.StartButton {
+    margin-left: auto;
+    margin-right: auto;
+    left: 100px;
+    top: 397px;
+    position: absolute;
+
+}
+
+#start {
+    text-align: center;
+    width: 112px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    background-color: #88c5d4;
+    font-family: 'Gamja Flower', cursive;
+    color: #ffffff;
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+#start:hover {
+    background-color: #d7e8ec;
+}
+
+#start:active {
+    background-color: #d7e8ec;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

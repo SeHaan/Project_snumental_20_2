@@ -1,0 +1,139 @@
+.IntroText_3 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 18px;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 159px;
+    position:absolute;
+    z-index: 1;
+
+    opacity: 0;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.Page2_Cloud {
+    left: 30px;
+    top: 116px;
+    z-index: 0;
+    position: absolute;
+    
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s;
+    -moz-animation-fill-mode: forwards;
+
+}
+
+.IntroText_4 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 18px;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 233px;
+    position:absolute;
+    z-index: 1;
+
+    opacity: 0;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.NextButton_2 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 100px;
+    top: 341px;
+    position: absolute;
+
+}
+
+#next_2 {
+    text-align: center;
+    width: 120px;
+    height: 42px;
+    border: 2px dashed #6b97a3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 16px;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 3s;
+    -moz-animation-fill-mode: forwards;
+}
+
+#next_2:hover {
+    background-color: #d7e8ec;
+}
+
+#next_2:active {
+    background-color: #d7e8ec;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

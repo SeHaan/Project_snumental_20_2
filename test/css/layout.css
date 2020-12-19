@@ -1,92 +1,84 @@
+* {box-sizing: border-box}
+
 #header {
     margin: 0px auto;
     width: 320px;
     height: 50px;
 }
 
-.test-container {
-    vertical-align: middle;
-    width: 320px;
-    height: 790px;
-    margin: 0px auto;
-    font-family: 'Gamja Flower', cursive;
+body {font-family: 'Gamja Flower', cursive; margin:0; color: #48656D;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.testQ {
+  width: 320px;
+  height: 790px;
+  position: relative;
+  margin: auto;
+  background-color: #CADDE6;
 }
 
-.Image {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    opacity: 0;
-
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: fadein;
-    -moz-animation-duration: 1s;
-    -moz-animation-fill-mode: forwards;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+  
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.Cover1 {
-    left: 26px;
-    top: 110px;
-    z-index: 1;
-    position: absolute;
+#navigator {
+  width: 320px;
+  height: auto;
+  margin: 0px auto;
+  background-color: #CADDE6;
 }
-
-.Cover2 {
-    left: 20px;
-    top: 123px;
-    z-index: 0;
-    position: absolute;
+  
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-
-.StartButton {
-    margin-left: auto;
-    margin-right: auto;
-    left: 100px;
-    top: 397px;
-    position: absolute;
-
-}
-
-#start {
-    text-align: center;
-    width: 112px;
-    height: 40px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    letter-spacing: 0.1em;
-    background-color: #88c5d4;
-    color: #ffffff;
-    opacity: 0;
-    
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: fadein;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 1s;
-    -moz-animation-fill-mode: forwards;
-}
-
-#start:hover {
-    background-color: #d7e8ec;
-}
-
-#start:active {
-    background-color: #d7e8ec;
+  
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 #footer {
@@ -96,19 +88,4 @@
     text-align: center;
     left: 45px;
     top: 844px;
-}
-
-@keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
