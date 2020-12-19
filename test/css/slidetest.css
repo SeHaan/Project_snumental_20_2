@@ -99,8 +99,3 @@ img {vertical-align: middle;}
     from {opacity: .4} 
     to {opacity: 1}
   }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (min-width: 481px) {
-    .prev, .next,.text {font-size: 11px}
-  }
