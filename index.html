@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>몽실몽실 나의 구름이야기</title>
+
+    <link href="test/css/slidetest.css" rel="stylesheet">
+    <link href="test/css/layout.css" rel="stylesheet">
+    <link href="test/css/page1_intro1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <style>
+      body {background-color: #CADDE6;}
+      @media (min-width: 481px) {
+          body {background-color: #ffffff;}
+          .test-container {background-color: #CADDE6;}
+          #footer {background-color: #CADDE6;}
+        }
+    </style>
+
+</head>
+<body>
+    <script src="test/js/slide.js"></script>
+    <script src="start.js"></script>
+
+    <div id="header">
+
+    </div>
+    <div class="testQ">
+
+        <div class="mySlides fade">
+          <div class="Image">
+            <div class="Cover1">
+              <img src="test/media/logo.png", alt="Cover_Logo", width="280", height="210">
+            </div>
+            <div class="Cover2">
+              <img src="test/media/cloud_title.png", alt="Cover_Cloud", width="280", height="208">
+            </div>
+          </div>
+          <div class="StartButton">
+            <button id="start" onclick="plusSlides(1)">꿈 꾸러 가기</button>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="IntroText">*BGM이 재생되는 중!!*<br><br>※ 현재 당신의 모습을 가장 잘 묘사하는<br>답변을 선택해주세요!<br><br>※ 스크롤을 끝까지 내려주세요!! &gt . &lt</div>
+          <div class="Page1_Coc">
+            <img src="test/media/1_co.png", alt="Cover_Coc", width="260", height="194">
+          </div>
+          <div class="IntroText_2">칵테일을 마시고<br>깜박 잠에 든 당신...</div>
+          <div class="z1">Z</div>
+          <div class="z2">Z</div>
+          <div class="z3">Z</div>
+          <div class="NextButton">
+            <button id="next" onclick="plusSlides(1)">다음 이야기</button>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <div class="text">Caption Four</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+
+    <div id="footer">
+      <img src="test/media/snumental.png", alt="Logo_footer", width="230", height="45">
+    </div>
+        
+</body>
+
+</html>
