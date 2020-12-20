@@ -1,7 +1,9 @@
-var slideIndex = 1;
+var slideIndex = 0;
 let aut = 0;
 let rel = 0;
 let com = 0;
+
+var doubling = false;
 
 window.onload = function() {
 
@@ -20,6 +22,7 @@ window.onload = function() {
         audio.play();
         console.log(aut);
         plusSlides(1);
+        window.scrollTo(0, 50);
     }
 
     var next = document.getElementById('next'); next.addEventListener('click', Next);
@@ -27,7 +30,8 @@ window.onload = function() {
     var next_3 = document.getElementById('next_3'); next_3.addEventListener('click', Next);
     var next_4 = document.getElementById('next_4'); next_4.addEventListener('click', Next);
     function Next() {
-        console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);
+        if(doublecheck()) return;
+        clickevent();
     }
 
     // Page 5 : rel1, m = 2.938, s = 0.666
@@ -35,23 +39,52 @@ window.onload = function() {
     var rel1s2 = document.getElementById('rel1s2'); rel1s2.addEventListener('click', Rel1s2);
     var rel1s3 = document.getElementById('rel1s3'); rel1s3.addEventListener('click', Rel1s3);
     var rel1s4 = document.getElementById('rel1s4'); rel1s4.addEventListener('click', Rel1s4);
-    function Rel1s1() {rel += normalize(1, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
-    function Rel1s2() {rel += normalize(2, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
-    function Rel1s3() {rel += normalize(3, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
-    function Rel1s4() {rel += normalize(4, 2.938, 0.666); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Rel1s1() {if(doublecheck()) return; rel += normalize(1, 2.938, 0.666); clickevent();}
+    function Rel1s2() {if(doublecheck()) return; rel += normalize(2, 2.938, 0.666); clickevent();}
+    function Rel1s3() {if(doublecheck()) return; rel += normalize(3, 2.938, 0.666); clickevent();}
+    function Rel1s4() {if(doublecheck()) return; rel += normalize(4, 2.938, 0.666); clickevent();}
 
-    // Page 6 : rel1, m = 3.04, s = 0.642
+    // Page 6 : com2, m = 3.04, s = 0.642
     var com2s1 = document.getElementById('com2s1'); com2s1.addEventListener('click', Com2s1);
     var com2s2 = document.getElementById('com2s2'); com2s2.addEventListener('click', Com2s2);
     var com2s3 = document.getElementById('com2s3'); com2s3.addEventListener('click', Com2s3);
     var com2s4 = document.getElementById('com2s4'); com2s4.addEventListener('click', Com2s4);
-    function Com2s1() {com += normalize(1, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
-    function Com2s2() {com += normalize(2, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
-    function Com2s3() {com += normalize(3, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
-    function Com2s4() {com += normalize(4, 3.04, 0.642); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel); plusSlides(1);}
+    function Com2s1() {if(doublecheck()) return; com += normalize(1, 3.04, 0.642); clickevent();}
+    function Com2s2() {if(doublecheck()) return; com += normalize(2, 3.04, 0.642); clickevent();}
+    function Com2s3() {if(doublecheck()) return; com += normalize(3, 3.04, 0.642); clickevent();}
+    function Com2s4() {if(doublecheck()) return; com += normalize(4, 3.04, 0.642); clickevent();}
+
+    // Page 7 : com1, m = 2.932, s = 0.696 inverse
+    var com1s1 = document.getElementById('com1s1'); com1s1.addEventListener('click', Com1s1);
+    var com1s2 = document.getElementById('com1s2'); com1s2.addEventListener('click', Com1s2);
+    var com1s3 = document.getElementById('com1s3'); com1s3.addEventListener('click', Com1s3);
+    var com1s4 = document.getElementById('com1s4'); com1s4.addEventListener('click', Com1s4);
+    function Com1s1() {if(doublecheck()) return; com += normalize(4, 2.932, 0.696); clickevent();}
+    function Com1s2() {if(doublecheck()) return; com += normalize(3, 2.932, 0.696); clickevent();}
+    function Com1s3() {if(doublecheck()) return; com += normalize(2, 2.932, 0.696); clickevent();}
+    function Com1s4() {if(doublecheck()) return; com += normalize(1, 2.932, 0.696); clickevent();}
+
+    // Page 8 : com1, m = 3.118, s = 0.576
+    var rel3s1 = document.getElementById('rel3s1'); rel3s1.addEventListener('click', Rel3s1);
+    var rel3s2 = document.getElementById('rel3s2'); rel3s2.addEventListener('click', Rel3s2);
+    var rel3s3 = document.getElementById('rel3s3'); rel3s3.addEventListener('click', Rel3s3);
+    var rel3s4 = document.getElementById('rel3s4'); rel3s4.addEventListener('click', Rel3s4);
+    function Rel3s1() {if(doublecheck()) return; rel += normalize(1, 3.118, 0.576); clickevent();}
+    function Rel3s2() {if(doublecheck()) return; rel += normalize(2, 3.118, 0.576); clickevent();}
+    function Rel3s3() {if(doublecheck()) return; rel += normalize(3, 3.118, 0.576); clickevent();}
+    function Rel3s4() {if(doublecheck()) return; rel += normalize(4, 3.118, 0.576); clickevent();}
+
+    // Page 9 : aut2, m = 2.86, s = 0.762
+    var aut2s1 = document.getElementById('aut2s1'); aut2s1.addEventListener('click', Aut2s1);
+    var aut2s2 = document.getElementById('aut2s2'); aut2s2.addEventListener('click', Aut2s2);
+    var aut2s3 = document.getElementById('aut2s3'); aut2s3.addEventListener('click', Aut2s3);
+    var aut2s4 = document.getElementById('aut2s4'); aut2s4.addEventListener('click', Aut2s4);
+    function Aut2s1() {if(doublecheck()) return; aut += normalize(1, 2.86, 0.762); clickevent();}
+    function Aut2s2() {if(doublecheck()) return; aut += normalize(2, 2.86, 0.762); clickevent();}
+    function Aut2s3() {if(doublecheck()) return; aut += normalize(3, 2.86, 0.762); clickevent();}
+    function Aut2s4() {if(doublecheck()) return; aut += normalize(4, 2.86, 0.762); clickevent();}
 
 };
-
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -72,6 +105,21 @@ function showSlides(n) {
     }
 
     slides[slideIndex-1].style.display = "block";
+}
+
+function clickevent() {
+    plusSlides(1); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel);
+    doubling = false;
+    window.scrollTo(0, 50);
+}
+
+function doublecheck() { // 중복 제출 방지 함수
+	if(doubling){
+		return doubling;
+	} else {
+		doubling = true;
+		return false;
+	}
 }
 
 function calculate(arr) { // 1차 테스트 결과값 계산 함수

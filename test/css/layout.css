@@ -48,8 +48,9 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: #000000;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 18px;
+  padding: 0px;
+  top: 300px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -83,8 +84,22 @@ img {vertical-align: middle;}
   z-index: 1;
 }
 
+.selection_b {
+  text-align: center;
+  width: 240px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #ffffffa2;
+  color: #48656D;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 15px;
+  z-index: 1;
+}
+
 .selection:hover {background-color: #8d999c;}
 .selection:active {background-color: #8d999c;}
+.selection_b:hover {background-color: #8d999c;}
+.selection_b:active {background-color: #8d999c;}
   
 @-webkit-keyframes fade {
   from {opacity: .4} 

@@ -256,18 +256,3 @@
 #next_4:active {
     background-color: #d7e8ec;
 }
-
-@keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}

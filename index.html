@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>몽실몽실 나의 구름이야기</title>
 
+    <!--슬라이드 페이지별로 css(디자인)파일 분리-->
     <link href="test/css/layout.css" rel="stylesheet">
     <link href="test/css/page0_start.css" rel="stylesheet">
     <link href="test/css/page1_intro1.css" rel="stylesheet">
@@ -14,7 +15,11 @@
     <link href="test/css/page4_intro4.css" rel="stylesheet">
     <link href="test/css/page5_rel1.css" rel="stylesheet">
     <link href="test/css/page6_com2.css" rel="stylesheet">
+    <link href="test/css/page7_com1.css" rel="stylesheet">
+    <link href="test/css/page8_rel3.css" rel="stylesheet">
+    <link href="test/css/page9_aut2.css" rel="stylesheet">
 
+    <!--웹폰트 링크: 감자 플라워-->
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@100&display=swap" rel="stylesheet">
     
     <style>
@@ -48,7 +53,7 @@
           <div class="StartButton">
             <button id="start">꿈 꾸러 가기</button>
           </div>
-          <div class="text">현재 인덱스 6(페이지 7)까지 작업 완료<br>Developed by Myn</div>
+          <div class="text">현재 인덱스 9(페이지 10)까지 작업 완료<br>Developed by Myn</div>
         </div>
         
         <div class="mySlides fade"> <!--1페이지-->
@@ -82,7 +87,6 @@
           <div class="Dialogue_1">
             <svg width="180px", height="80px" id="ball_1">
               <image width="180" height="80" xlink:href="test/media/dialogue.svg" preserveAspectRatio="none"></image>
-              <!--<object type="image/svg+xml" data="test/media/dialogue.svg" class="dialogue_1" width="160" height="60"></object>-->
             </svg>
             <div class="dialogue_1">안녕!<br>구름마을에 온 것을 환영해!</div>
           </div>
@@ -139,10 +143,10 @@
             <button class="selection" id="rel1s4">난세의 영웅 등장이다!<br>(눈물을 글썽이며)고마워!</button>
           </div>
           <div class="Page5_Cloud_Sad">
-            <img src="test/media/cloud_sad.png", alt="cloud_hello", width="180", height="132">
+            <img src="test/media/cloud_sad.png", alt="cloud_sad", width="180", height="132">
           </div>
           <div class="Page5_Cloud_Happy">
-            <img src="test/media/cloud_happy.png", alt="cloud_hello", width="180", height="132">
+            <img src="test/media/cloud_happy.png", alt="cloud_happy", width="180", height="132">
           </div>
         </div>
 
@@ -155,7 +159,7 @@
             <div class="dialogue_4">정말 고마워!!!</div>
           </div>
           <div class="Page6_Cloud_Happy">
-            <img src="test/media/cloud_happy.png", alt="cloud_hello", width="180", height="132">
+            <img src="test/media/cloud_happy.png", alt="cloud_happy", width="180", height="132">
           </div>
           <div class="com2_text2">이때 당신은 어떤 생각이 드나요?</div>
           <div id="Com2s1">
@@ -173,15 +177,78 @@
         </div>
 
         <div class="mySlides fade"> <!--7페이지-->
-          <div class="text">8</div>
+          <div class="com1_text1">본격적으로 악당을<br>찾으러 가기 전 며칠 간</div>
+          <div class="com1_text2">구름마을에서 지내며<br>모험을 떠날 준비를 했습니다.</div>
+          <div class="com1_text3">헛둘, 헛둘, 오늘도<br>악당을 물리치기 위한 운동을 합니다.</div>
+          <div id="Com1s1">
+            <button class="selection" id="com1s1">지금이라면...<br>뭐든지 이룰 수 있어!</button>
+          </div>
+          <div id="Com1s2">
+            <button class="selection" id="com1s2">지금까지 준비해온 정도면<br>충분하지 않을까?</button>
+          </div>
+          <div id="Com1s3">
+            <button class="selection" id="com1s3">운동량을 더 늘려야 할까...<br>아직 충분하지 않은 것 같아...</button>
+          </div>
+          <div id="Com1s4">
+            <button class="selection" id="com1s4">아니야! 아직 아니야!<br>한참 부족해!</button>
+          </div>
         </div>
 
         <div class="mySlides fade"> <!--8페이지-->
-          <div class="text">9</div>
+          <div class="rel3_text1">드디어 떠날 채비를 합니다.</div>
+          <div class="rel3_text2">마을 주민들은 당신에게...</div>
+          <div id="Rel3s1">
+            <button class="selection_b" id="rel3s1">그리 신경을 쓰지 않아서,<br>알아서 가방을 챙겼다.</button>
+          </div>
+          <div id="Rel3s2">
+            <button class="selection_b" id="rel3s2">뭘 챙겨야 하는지<br>알려만 준다.</button>
+          </div>
+          <div id="Rel3s3">
+            <button class="selection_b" id="rel3s3">짐을 같이 챙겨준다.</button>
+          </div>
+          <div id="Rel3s4">
+            <button class="selection_b" id="rel3s4">가는 길에 먹게 구름사탕도 채겨가고,<br>별사탕도 가져가구<br>(주섬주섬 계속 뭘 챙겨준다)</button>
+          </div>
+          <div id="Page8_Candy1">
+            <img src="test/media/candy.png", alt="candy", width="104", height="88">
+          </div>
+          <div id="Page8_Candy2">
+            <img src="test/media/candy.png", alt="candy", width="84", height="67">
+          </div>
+          <div id="Page8_Candy3">
+            <img src="test/media/candy.png", alt="candy", width="102", height="93">
+          </div>
+          <div id="Page8_Star1">
+            <img src="test/media/star.png", alt="star", width="69", height="56">
+          </div>
+          <div id="Page8_Star2">
+            <img src="test/media/star.png", alt="star", width="105", height="87">
+          </div>
         </div>
 
         <div class="mySlides fade"> <!--9페이지-->
-          <div class="text">10</div>
+          <div class="aut2_text1">마을 주민들과 함께 악당을 찾아 떠납니다.</div>
+          <div class="aut2_text2">어둡고 무서우며, 천둥번개가 끊이지 않는<br><span style="color: #ffffff; background-color: #48656D;">"먹구름의 숲"</span>에 들어섰습니다.</div>
+          <div class="aut2_text3">숲 속에 갈림길이 있네요.<br>오른쪽 길은 고난이 예상되지만<br>경로가 짧아 보이고,<br>왼쪽 길은 평이하지만<br>오래 걸릴 것으로 예상됩니다.</div>
+          <div class="aut2_text4">주민들과의 논의 상황에서<br>당신은 당신의 생각과 의견을<br>얼마나 자유롭게 말하고 있나요?</div>
+          <div id="Page9_Cloud">
+            <img src="test/media/cloud_page9.png", alt="cloud_page9", width="235", height="176">
+          </div>
+          <div id="Page9_Two">
+            <img src="test/media/cloud_two.png", alt="cloud_page9", width="235", height="176">
+          </div>
+          <div id="Aut2s1">
+            <object type="image/png" data="test/media/phoneX.png" id="aut2s1" width="92" height="69"></object>
+          </div>
+          <div id="Aut2s2">
+            <object type="image/png" data="test/media/phone1.png" id="aut2s2" width="87" height="67"></object>
+          </div>
+          <div id="Aut2s3">
+            <object type="image/png" data="test/media/phone2.png" id="aut2s3" width="85" height="69"></object>
+          </div>
+          <div id="Aut2s4">
+            <object type="image/png" data="test/media/phone3.png" id="aut2s4" width="92" height="69"></object>
+          </div>
         </div>
 
         <div class="mySlides fade"> <!--10페이지-->
@@ -194,6 +261,18 @@
 
         <div class="mySlides fade"> <!--12페이지-->
           <div class="text">13</div>
+        </div>
+
+        <div class="mySlides fade"> <!--13페이지-->
+          <div class="text">14</div>
+        </div>
+
+        <div class="mySlides fade"> <!--14페이지-->
+          <div class="text">15</div>
+        </div>
+
+        <div class="mySlides fade"> <!--15페이지-->
+          <div class="text">16</div>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
