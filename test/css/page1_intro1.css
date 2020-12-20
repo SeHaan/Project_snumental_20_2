@@ -174,16 +174,7 @@
 }
 
 #next {
-    text-align: center;
-    width: 120px;
-    height: 42px;
-    border: 2px dashed #6b97a3;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #000000;
     opacity: 0;
-    font-family: 'Gamja Flower', cursive;
-    font-size: 16px;
     
     animation-name: fadein;
     animation-duration: 1s;
@@ -199,12 +190,4 @@
     -moz-animation-duration: 1s;
     -moz-animation-delay: 4s;
     -moz-animation-fill-mode: forwards;
-}
-
-#next:hover {
-    background-color: #d7e8ec;
-}
-
-#next:active {
-    background-color: #d7e8ec;
 }

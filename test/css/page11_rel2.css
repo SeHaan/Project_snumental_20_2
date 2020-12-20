@@ -1,13 +1,12 @@
-.IntroText_5 {
+.rel2_text1 {
     margin: 0px auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     width: 260px;
     height: auto;
     left: 30px;
     top: 90px;
     position:absolute;
-    z-index: 1;
 
     opacity: 0;
 
@@ -24,16 +23,43 @@
     -moz-animation-fill-mode: forwards;
 }
 
-.IntroText_6 {
+.rel2_text2 {
     margin: 0px auto;
     text-align: center;
-    font-size: 18px;
-    width: 240px;
+    font-size: 17px;
+    width: 260px;
     height: auto;
-    left: 40px;
-    top: 200px;
+    left: 30px;
+    top: 180px;
     position:absolute;
-    z-index: 1;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.rel2_text3 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 240px;
+    position:absolute;
 
     opacity: 0;
     
@@ -51,15 +77,46 @@
     -moz-animation-duration: 1s;
     -moz-animation-delay: 1s;
     -moz-animation-fill-mode: forwards;
-
 }
 
-.Page3_Cloud {
+.rel2_text4 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 260px;
+    height: auto;
     left: 30px;
-    top: 185px;
-    z-index: 0;
-    position: absolute;
+    top: 307px;
+    position:absolute;
+
+    opacity: 0;
     
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.rel2_text5 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 372px;
+    position:absolute;
+
     opacity: 0;
     
     animation-name: fadein;
@@ -76,15 +133,81 @@
     -moz-animation-duration: 1s;
     -moz-animation-delay: 2s;
     -moz-animation-fill-mode: forwards;
-
 }
 
-.Page3_Cloud_Hello {
-    left: -30px;
-    top: 280px;
-    z-index: 1;
+#Cloud_After {
+    left: 25px;
+    top: 396px;
     position: absolute;
+    z-index: 1;
+}
 
+#Bridge_Fixed {
+    left: 115px;
+    top: 463px;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+#Bridge_Fixed, #Cloud_After {
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+#Rel2s1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 413px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Rel2s2 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 473px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Rel2s3 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 533px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Rel2s4 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 593px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Rel2s1, #Rel2s2, #Rel2s3, #Rel2s4 {
     opacity: 0;
     
     animation-name: fadein;
@@ -100,85 +223,5 @@
     -moz-animation-name: fadein;
     -moz-animation-duration: 1s;
     -moz-animation-delay: 3s;
-    -moz-animation-fill-mode: forwards;
-
-
-}
-
-.Dialogue_1 {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    width: 180px;
-    height: 80px;
-    left: 100px;
-    top: 247px;
-    position:absolute;
-    z-index: 1;
-
-    opacity: 0;
-    
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-delay: 3.5s;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 3.5s;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: fadein;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 3.5s;
-    -moz-animation-fill-mode: forwards;
-
-}
-
-.dialogue_1 {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    font-size: 16px;
-    width: 160px;
-    height: auto;
-    z-index: 3;
-
-    left: 8px;
-    top: 8px;
-    position: absolute;
-}
-
-#ball_1 {
-    margin: 0px auto;
-    padding: 0px;
-    font-size: 16px;
-    z-index: 2;
-}
-
-.NextButton_3 {
-    margin-left: auto;
-    margin-right: auto;
-    left: 100px;
-    top: 418px;
-    position: absolute;
-}
-
-#next_3 {
-    opacity: 0;
-    
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 4s;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: fadein;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 4s;
     -moz-animation-fill-mode: forwards;
 }

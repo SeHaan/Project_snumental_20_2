@@ -20,7 +20,7 @@ window.onload = function() {
     start.addEventListener('click', startTest);
     function startTest() {
         audio.play();
-        console.log(aut);
+        console.log('start!');
         plusSlides(1);
         window.scrollTo(0, 50);
     }
@@ -29,10 +29,9 @@ window.onload = function() {
     var next_2 = document.getElementById('next_2'); next_2.addEventListener('click', Next);
     var next_3 = document.getElementById('next_3'); next_3.addEventListener('click', Next);
     var next_4 = document.getElementById('next_4'); next_4.addEventListener('click', Next);
-    function Next() {
-        if(doublecheck()) return;
-        clickevent();
-    }
+    var next_5 = document.getElementById('next_5'); next_5.addEventListener('click', Next);
+    var next_6 = document.getElementById('next_6'); next_6.addEventListener('click', Next);
+    function Next() {if(doublecheck()) return; clickevent();}
 
     // Page 5 : rel1, m = 2.938, s = 0.666
     var rel1s1 = document.getElementById('rel1s1'); rel1s1.addEventListener('click', Rel1s1);
@@ -84,6 +83,45 @@ window.onload = function() {
     function Aut2s3() {if(doublecheck()) return; aut += normalize(3, 2.86, 0.762); clickevent();}
     function Aut2s4() {if(doublecheck()) return; aut += normalize(4, 2.86, 0.762); clickevent();}
 
+    // Page 10 : com3, m = 2.554, s = 0.726
+    var com3s1 = document.getElementById('com3s1'); com3s1.addEventListener('click', Com3s1);
+    var com3s2 = document.getElementById('com3s2'); com3s2.addEventListener('click', Com3s2);
+    var com3s3 = document.getElementById('com3s3'); com3s3.addEventListener('click', Com3s3);
+    var com3s4 = document.getElementById('com3s4'); com3s4.addEventListener('click', Com3s4);
+    function Com3s1() {if(doublecheck()) return; com += normalize(1, 2.86, 0.762); clickevent();}
+    function Com3s2() {if(doublecheck()) return; com += normalize(2, 2.86, 0.762); clickevent();}
+    function Com3s3() {if(doublecheck()) return; com += normalize(3, 2.86, 0.762); clickevent();}
+    function Com3s4() {if(doublecheck()) return; com += normalize(4, 2.86, 0.762); clickevent();}
+
+    // Page 11 : rel2, m = 3.208, s = 0.684
+    var rel2s1 = document.getElementById('rel2s1'); rel2s1.addEventListener('click', Rel2s1);
+    var rel2s2 = document.getElementById('rel2s2'); rel2s2.addEventListener('click', Rel2s2);
+    var rel2s3 = document.getElementById('rel2s3'); rel2s3.addEventListener('click', Rel2s3);
+    var rel2s4 = document.getElementById('rel2s4'); rel2s4.addEventListener('click', Rel2s4);
+    function Rel2s1() {if(doublecheck()) return; rel += normalize(1, 3.208, 0.684); clickevent();}
+    function Rel2s2() {if(doublecheck()) return; rel += normalize(2, 3.208, 0.684); clickevent();}
+    function Rel2s3() {if(doublecheck()) return; rel += normalize(3, 3.208, 0.684); clickevent();}
+    function Rel2s4() {if(doublecheck()) return; rel += normalize(4, 3.208, 0.684); clickevent();}
+
+    // Page 12 : aut1, m = 2.884, s = 0.786 inverse
+    var aut1s1 = document.getElementById('aut1s1'); aut1s1.addEventListener('click', Aut1s1);
+    var aut1s2 = document.getElementById('aut1s2'); aut1s2.addEventListener('click', Aut1s2);
+    var aut1s3 = document.getElementById('aut1s3'); aut1s3.addEventListener('click', Aut1s3);
+    var aut1s4 = document.getElementById('aut1s4'); aut1s4.addEventListener('click', Aut1s4);
+    function Aut1s1() {if(doublecheck()) return; aut += normalize(4, 2.884, 0.786); clickevent();}
+    function Aut1s2() {if(doublecheck()) return; aut += normalize(3, 2.884, 0.786); clickevent();}
+    function Aut1s3() {if(doublecheck()) return; aut += normalize(2, 2.884, 0.786); clickevent();}
+    function Aut1s4() {if(doublecheck()) return; aut += normalize(1, 2.884, 0.786); clickevent();}
+
+    // Page 13 : aut3, m = 2.788, s = 0.78 inverse
+    var aut3s1 = document.getElementById('aut3s1'); aut3s1.addEventListener('click', Aut3s1);
+    var aut3s2 = document.getElementById('aut3s2'); aut3s2.addEventListener('click', Aut3s2);
+    var aut3s3 = document.getElementById('aut3s3'); aut3s3.addEventListener('click', Aut3s3);
+    var aut3s4 = document.getElementById('aut3s4'); aut3s4.addEventListener('click', Aut3s4);
+    function Aut3s1() {if(doublecheck()) return; aut += normalize(4, 2.788, 0.78); clickevent();}
+    function Aut3s2() {if(doublecheck()) return; aut += normalize(3, 2.788, 0.78); clickevent();}
+    function Aut3s3() {if(doublecheck()) return; aut += normalize(2, 2.788, 0.78); clickevent();}
+    function Aut3s4() {if(doublecheck()) return; aut += normalize(1, 2.788, 0.78); clickevent();}
 };
 
 function plusSlides(n) {

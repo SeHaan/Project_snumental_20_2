@@ -1,13 +1,13 @@
-.IntroText_5 {
+.aut1_text1 {
     margin: 0px auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     width: 260px;
     height: auto;
     left: 30px;
-    top: 90px;
+    top: 70px;
     position:absolute;
-    z-index: 1;
+    z-index: 3;
 
     opacity: 0;
 
@@ -24,15 +24,39 @@
     -moz-animation-fill-mode: forwards;
 }
 
-.IntroText_6 {
+.aut1_text2 {
     margin: 0px auto;
     text-align: center;
-    font-size: 18px;
-    width: 240px;
+    font-size: 17px;
+    width: 260px;
     height: auto;
-    left: 40px;
-    top: 200px;
+    left: 30px;
+    top: 132px;
     position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+#Cloud_After_Q {
+    left: 40px;
+    top: 140px;
+    position: absolute;
     z-index: 1;
 
     opacity: 0;
@@ -51,15 +75,76 @@
     -moz-animation-duration: 1s;
     -moz-animation-delay: 1s;
     -moz-animation-fill-mode: forwards;
-
 }
 
-.Page3_Cloud {
-    left: 30px;
-    top: 185px;
-    z-index: 0;
+#Cloud_Black_Q {
+    left: 45px;
+    top: 202px;
     position: absolute;
+    z-index: 2;
     
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.aut1_text3 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 326px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.aut1_text4 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 397px;
+    position:absolute;
+    z-index: 3;
+
     opacity: 0;
     
     animation-name: fadein;
@@ -76,15 +161,45 @@
     -moz-animation-duration: 1s;
     -moz-animation-delay: 2s;
     -moz-animation-fill-mode: forwards;
-
 }
 
-.Page3_Cloud_Hello {
-    left: -30px;
-    top: 280px;
-    z-index: 1;
+#Aut1s1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 441px;
     position: absolute;
+    z-index: 2;
+}
 
+#Aut1s2 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 513px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Aut1s3 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 585px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Aut1s4 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    top: 657px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Aut1s1, #Aut1s2, #Aut1s3, #Aut1s4 {
     opacity: 0;
     
     animation-name: fadein;
@@ -100,85 +215,5 @@
     -moz-animation-name: fadein;
     -moz-animation-duration: 1s;
     -moz-animation-delay: 3s;
-    -moz-animation-fill-mode: forwards;
-
-
-}
-
-.Dialogue_1 {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    width: 180px;
-    height: 80px;
-    left: 100px;
-    top: 247px;
-    position:absolute;
-    z-index: 1;
-
-    opacity: 0;
-    
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-delay: 3.5s;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 3.5s;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: fadein;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 3.5s;
-    -moz-animation-fill-mode: forwards;
-
-}
-
-.dialogue_1 {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    font-size: 16px;
-    width: 160px;
-    height: auto;
-    z-index: 3;
-
-    left: 8px;
-    top: 8px;
-    position: absolute;
-}
-
-#ball_1 {
-    margin: 0px auto;
-    padding: 0px;
-    font-size: 16px;
-    z-index: 2;
-}
-
-.NextButton_3 {
-    margin-left: auto;
-    margin-right: auto;
-    left: 100px;
-    top: 418px;
-    position: absolute;
-}
-
-#next_3 {
-    opacity: 0;
-    
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 4s;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: fadein;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 4s;
     -moz-animation-fill-mode: forwards;
 }

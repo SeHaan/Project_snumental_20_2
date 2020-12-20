@@ -50,7 +50,7 @@ img {vertical-align: middle;}
   color: #000000;
   font-size: 18px;
   padding: 0px;
-  top: 300px;
+  top: 470px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -72,6 +72,7 @@ img {vertical-align: middle;}
   background-color: #CADDE6;
 }
 
+/*Common Object*/
 .selection {
   text-align: center;
   width: 240px;
@@ -96,11 +97,25 @@ img {vertical-align: middle;}
   z-index: 1;
 }
 
+.nextbutton {
+  text-align: center;
+  width: 120px;
+  height: 42px;
+  border: 2px dashed #6b97a3;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 16px;
+}
+
 .selection:hover {background-color: #8d999c;}
 .selection:active {background-color: #8d999c;}
 .selection_b:hover {background-color: #8d999c;}
 .selection_b:active {background-color: #8d999c;}
-  
+.nextbutton:hover {background-color: #d7e8ec;}
+.nextbutton:active {background-color: #d7e8ec;}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
