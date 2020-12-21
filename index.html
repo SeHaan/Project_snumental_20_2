@@ -24,6 +24,17 @@
     <link href="test/css/page13_aut3.css" rel="stylesheet">
     <link href="test/css/page14_inter1.css" rel="stylesheet">
     <link href="test/css/page15_inter2.css" rel="stylesheet">
+    <link href="test/css/page16_inter3.css" rel="stylesheet">
+    <link href="test/css/page17_inter4.css" rel="stylesheet">
+    <link href="test/css/page18_resaut.css" rel="stylesheet">
+    <link href="test/css/page19_rescom.css" rel="stylesheet">
+    <link href="test/css/page20_resrel.css" rel="stylesheet">
+    <link href="test/css/page21_inter5.css" rel="stylesheet">
+    <link href="test/css/page22_inter6.css" rel="stylesheet">
+    <link href="test/css/page23_inter7.css" rel="stylesheet">
+    <link href="test/css/page24_result.css" rel="stylesheet">
+
+    <link href="test/css/lightbox.css" rel="stylesheet">
 
     <!--웹폰트 링크: 감자 플라워-->
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -32,7 +43,6 @@
       body {background-color: #CADDE6;}
       @media (min-width: 481px) {
           body {background-color: #ffffff;}
-          .test-container {background-color: #CADDE6;}
           #footer {background-color: #CADDE6;}
         }
     </style>
@@ -59,7 +69,7 @@
           <div class="StartButton">
             <button id="start">꿈 꾸러 가기</button>
           </div>
-          <div class="text">현재 인덱스 15(페이지 16)까지 작업 완료<br>Developed by Myn</div>
+          <div class="text">결과 페이지 외 모든 작업 완료<br>Developed by Myn</div>
         </div>
         
         <div class="mySlides fade"> <!--1페이지-->
@@ -387,12 +397,187 @@
         </div>
 
         <div class="mySlides fade"> <!--16페이지-->
-          <div class="text">17</div>
+          <div class="inter3_text1">먹구름과 주민들은 서로를<br>더 잘 이해하게 되었습니다.</div>
+          <div class="inter3_text2">이제 그들은 구름마을로 돌아가<br>함께 살아가기로 했습니다.</div>
+          <div class="inter3_text3">구름 다리를 건너려는 찰나,<br>먹구름이 당신에게<br>조심스럽게 말을 걸었습니다.</div>
+          <div id="Result_Brd">
+            <img src="test/media/bridge_fixed.png", alt="result_brd", width="280", height="210">
+          </div>
+          <div id="Cloud_Black_Happy">
+            <img src="test/media/cloud_black_happy.png", alt="cloud_black_happy", width="240", height="180">
+          </div>
+          <div class="Dialogue_5">
+            <svg width="200px", height="80px" id="ball_5">
+              <image width="200" height="80" xlink:href="test/media/dialogue.svg" preserveAspectRatio="none"></image>
+            </svg>
+            <div class="dialogue_5">잠깐 너에게 할 얘기가 있어...!</div>
+          </div>
+          <div class="NextButton_7">
+            <button class="nextbutton" id="next_7">다음 이야기</button>
+          </div>
         </div>
 
         <div class="mySlides fade"> <!--17페이지-->
-          <div class="text">18</div>
+          <div class="inter4_text1">고개를 갸우뚱하며 먹구름에게 다가갔더니</div>
+          <div class="inter4_text2">먹구름이 미소를 지으며 말했습니다.</div>
+          <div class="Dialogue_6">
+            <svg width="220px", height="100px" id="ball_6">
+              <image width="220" height="100" xlink:href="test/media/dialogue.svg" preserveAspectRatio="none"></image>
+            </svg>
+            <div class="dialogue_6">오해를 풀 수 있게 도와줘서 고마워.<br>너에게 작은 선물을 주고 싶은데...</div>
+          </div>
+          <div id="Cloud_Black_Smile">
+            <img src="test/media/cloud_black_smile.png", alt="cloud_black_smile", width="280", height="210">
+          </div>
+          <div class="GiftResult">
+            <button class="giftresult", id="giftresult">무슨 선물이지?</button>
+          </div>
         </div>
+
+        <div class="mySlides fade"> <!--18페이지: 자율성 욕구가 부족한 경우-->
+          <div class="resaut_text1"><span style="background-color: #FEFFCC;">"네 삶의 주인이 다른 누구도 아닌</span><br><span style="background-color: #FEFFCC;">바로 너라는 사실을 느끼며 살 수 있도록</span><br><span style="background-color: #FEFFCC;">도와주고 싶은데,</span></div>
+          <div class="resaut_text2"><span style="background-color: #FEFFCC;">혹시 이 중에서 가지고 싶은 선물을</span><br><span style="background-color: #FEFFCC;">하나 골라보겠어?"</span></div>
+          <div id="Resaut1">
+            <button class="selection_g" id="resaut1"><span style="font-size: 13px;">잠시 일상에서 벗어날 수 있게 해주는</span><br><span style="font-size: 18px;">구름망토</span></button>
+            <img src="test/media/res_man.png", id="resaut1_pic", alt="res_man", width="90", height="90">
+          </div>
+          <div id="Resaut2">
+            <button class="selection_g" id="resaut2"><span style="font-size: 13px;">다른 사람이 아닌 나만을 위한</span><br><span style="font-size: 18px;">구름소포</span></button>
+            <img src="test/media/res_box.png", id="resaut2_pic" alt="res_man", width="90", height="90">
+          </div>
+          <div id="Resaut3">
+            <button class="selection_g" id="resaut3"><span style="font-size: 13px;">장시간 온전히 나만을 위한 공간을<br>마련해주는</span><br><span style="font-size: 18px;">구름커튼</span></button>
+            <img src="test/media/res_cut.png", id="resaut3_pic" alt="res_man", width="90", height="90">
+          </div>
+          <div id="Resaut4">
+            <button class="selection_g" id="resaut4"><span style="font-size: 13px;">내 속의 고요함으로 빠져들게 해주는</span><br><span style="font-size: 18px;">구름향초</span></button>
+            <img src="test/media/res_candle.png", id="resaut4_pic" alt="res_man", width="90", height="90">
+          </div>
+          <div id="Resaut5">
+            <button class="selection_g" id="resaut5"><span style="font-size: 13px;">내가 진정으로 해 보고 싶은 것을<br>배울 수 있게 해주는</span><br><span style="font-size: 18px;">구름주스</span></button>
+            <img src="test/media/res_juice.png", id="resaut5_pic", alt="res_man", width="90", height="90">
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--19페이지: 유능성 욕구가 부족한 경우-->
+          <div class="rescom_text1"><span style="background-color: #FEFFCC;">"네가 좀 더 훌륭하고 가치 있는 사람임을</span><br><span style="background-color: #FEFFCC;">느끼며 살 수 있도록 도와주고 싶은데,</span></div>
+          <div class="rescom_text2"><span style="background-color: #FEFFCC;">혹시 이 중에서 가지고 싶은 선물을</span><br><span style="background-color: #FEFFCC;">하나 골라보겠어?"</span></div>
+          <div id="Rescom1">
+            <button class="selection_g" id="rescom1"><span style="font-size: 13px;">나의 새로운 모습들이 한데 모아<br>만들어지는</span><br><span style="font-size: 18px;">구름주스</span></button>
+            <img src="test/media/res_juice.png", id="rescom1_pic", alt="res_juice", width="90", height="90">
+          </div>
+          <div id="Rescom2">
+            <button class="selection_g" id="rescom2"><span style="font-size: 13px;">가뿐한 움직임으로 더 많은 것을<br>경험케 하는</span><br><span style="font-size: 18px;">구름신발</span></button>
+            <img src="test/media/res_shoes.png", id="rescom2_pic", alt="res_shoes", width="90", height="90">
+          </div>
+          <div id="Rescom3">
+            <button class="selection_g" id="rescom3"><span style="font-size: 13px;">가는 발걸음마다 나에게 새로운 힘이 되는</span><br><span style="font-size: 18px;">구름길</span></button>
+            <img src="test/media/res_road.png", id="rescom3_pic", alt="res_road", width="90", height="90">
+          </div>
+          <div id="Rescom4">
+            <button class="selection_g" id="rescom4"><span style="font-size: 13px;">지치고 힘들 때 열어보는</span><br><span style="font-size: 18px;">구름소포</span></button>
+            <img src="test/media/res_box.png", id="rescom4_pic", alt="res_box", width="90", height="90">
+          </div>
+          <div id="Rescom5">
+            <button class="selection_g" id="rescom5"><span style="font-size: 13px;">베고 푹 자면 능률이 쑥쑥 오르는</span><br><span style="font-size: 13px;">구름베개</span></button>
+            <img src="test/media/res_pil.png", id="rescom5_pic", alt="res_pil", width="90", height="90">
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--20페이지: 관계성 욕구가 부족한 경우-->
+          <div class="resrel_text1"><span style="background-color: #FEFFCC;">"네가 좀 더 다른 사람들과 사랑을</span><br><span style="background-color: #FEFFCC;">많이 주고받으며 살 수 있도록 도와주고 싶은데,</span></div>
+          <div class="resrel_text2"><span style="background-color: #FEFFCC;">혹시 이 중에서 가지고 싶은 선물을</span><br><span style="background-color: #FEFFCC;">하나 골라보겠어?"</span></div>
+          <div id="Resrel1">
+            <button class="selection_g" id="resrel1"><span style="font-size: 13px;">사랑하는 이와 함께 덮는</span><br><span style="font-size: 18px;">구름담요</span></button>
+            <img src="test/media/res_juice.png", id="resrel1_pic", alt="res_juice", width="90", height="90">
+          </div>
+          <div id="Resrel2">
+            <button class="selection_g" id="resrel2"><span style="font-size: 13px;">함께하는 공간마다<br>즐거운 놀이터를 만들어주는</span><br><span style="font-size: 18px;">구름신발</span></button>
+            <img src="test/media/res_shoes.png", id="resrel2_pic", alt="res_shoes", width="90", height="90">
+          </div>
+          <div id="Resrel3">
+            <button class="selection_g" id="resrel3"><span style="font-size: 13px;">산뜻한 공기를 마시며<br>함께 느긋한 여유를 나누는</span><br><span style="font-size: 18px;">구름길</span></button>
+            <img src="test/media/res_road.png", id="resrel3_pic", alt="res_road", width="90", height="90">
+          </div>
+          <div id="Resrel4">
+            <button class="selection_g" id="resrel4"><span style="font-size: 13px;">맛있는 음식을 나눠 먹으며<br>함께하는 행복을 불려주는</span><br><span style="font-size: 18px;">구름뷔페</span></button>
+            <img src="test/media/res_buf.png", id="resrel4_pic", alt="res_buf", width="90", height="90">
+          </div>
+          <div id="Resrel5">
+            <button class="selection_g" id="resrel5"><span style="font-size: 13px;">새로운 경험 속<br>다른 이들과의 추억이 함께 고아지는</span><br><span style="font-size: 13px;">구름주스</span></button>
+            <img src="test/media/res_juice.png", id="resrel5_pic", alt="res_juice", width="90", height="90">
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--21페이지-->
+          <div class="inter5_text1"><span style="background-color: #FEFFCC;">"그렇구나! 그러면 이걸 선물로 줄게!"</span></div>
+          <div id="Cloud_Black_Gift">
+            <img src="test/media/cloud_black_smile.png", alt="cloud_black_smile", width="360", height="270">
+          </div>
+          <div id="GiftBox">
+            <img src="test/media/giftbox.png", alt="giftbox", width="240", height="180">
+          </div>
+          <div class="inter5_text2">먹구름은 몽글몽글한 품 속에서<br>예쁘게 장식된 상자를 꺼내어<br>당신에게 건냈습니다.</div>
+          <div class="inter5_text3"><span style="background-color: #FFFFFF;">"고마워! 그럼 상자를 열어볼까...?"</span></div>
+          <div class="NextButton_8">
+            <button class="nextbutton" id="next_8">상자 열어보기</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--23페이지-->
+          <div id="Drop1">
+            <img src="test/media/drop.png", alt="drop1", width="220", height="200">
+          </div>
+          <div id="Drop2">
+            <img src="test/media/drop.png", alt="drop2", width="70", height="50">
+          </div>
+          <div id="Drop3">
+            <img src="test/media/drop.png", alt="drop3", width="95", height="75">
+          </div>
+          <div id="Drop4">
+            <img src="test/media/drop.png", alt="drop4", width="35", height="25">
+          </div>
+          <div id="Drop5">
+            <img src="test/media/drop.png", alt="drop5", width="120", height="100">
+          </div>
+          <div id="Drop6">
+            <img src="test/media/drop.png", alt="drop6", width="35", height="25">
+          </div>
+          <div class="inter6_text2">상자를 열어보려는 찰나,<br>갑자기 세상이 비눗방울처럼 변하며<br>점차 사라지기 시작합니다.</div>
+          <div class="inter6_text1"><span style="background-color: #FFFFFF">"어어...? 갑자기 왜 이러는 거야...?"</span></div>
+          <div class="NextButton_9">
+            <button class="nextbutton_9" id="next_9">상자 열어보기</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade"> <!--22페이지-->
+          <div class="inter7_text1"><span style="background-color: #48656D; color: #FFFFFF;">"굿-모-닝. 빰빰빰, 빠빠빠 빠- 빠 빠빠빠빠!"</span></div>
+          <div class="inter7_text2">갑자기 시끄러운 알람 소리가<br>귀를 때리기 시작했고<br>당신은 부스스한 머리를 만지며 일어납니다.</div>
+          <div class="inter7_text3"><span style="background-color: #FFFFFF">"으으... 뭐야, 꿈이었네.<br>기분 좋은 꿈이었지만,<br>뭔가 조금 아쉬운걸."</span></div>
+          <div class="inter7_text4">"당신은 아쉬움을 뒤로 하고<br>고개를 들어 창 밖을 바라보았습니다."</div>
+          <div class="inter7_text5">"창 밖에는 푸른 쪽빛 하늘에<br>구름이 한 점 걸려 있었습니다."</div>
+          <div class="ResultPage">
+            <button class="resultpage" id="resultbutton">상자 열어보기</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade" style="background-color: #C4E3EC;"> <!--23페이지-->
+          <div class="Result_Text1"><span style = "font-weight: bold;">‘몽夢실몽夢실 나의 구름 이야기’</span>는<br>개인의 기본 심리 욕구 충족 상태를 확인하고<br>그에 따른 활동을 추천해 주는 테스트로,<br>서울대학교 학생심리건강지원단의 2020년 2학기<br>온라인 부스 프로젝트의 일환입니다.</div>
+          <div class="Result_Text2">학생심리건강지원단은 서울대학교<br>대학생활문화원 산하 학생자치단체로<br>교내 구성원들의 심리건강 증진을 위해<br>다양한 활동을 진행하고 있는데,<br>올해는 코로나19로 인해<br>온라인 부스 프로젝트로 만나뵙게 되었습니다.</div>
+          <div class="Result_Text3">이번 온라인 부스는 본 테스트와 결과에 기반해<br>활동을 추천해주는 영상으로 구성되어 있습니다.<br>자기결정성 이론에 기반을 둔 테스트를 통해<br>기본심리욕구 중 상대적으로 덜 충족된 욕구가<br>무엇인지 확인하실 수 있습니다.<br>영상을 통해 해당 욕구를 충족하는데<br>도움이 될 활동을 확인하실 수 있습니다.</div>
+          <div class="Result_Text4">결과와 연결되는 추천 활동 영상은<br>결과 화면 아래 <span style = "font-weight: bold;">링크</span>를 통해 확인하실 수 있습니다!</div>
+          <div class="Result_Text5">테스트 결과와 영상을 통해<br><span style = "font-weight: bold;">여러분의 현재 모습을 들여다 보고,<br>스스로를 채우는 시간이 되셨기를 바랍니다.</span></div>
+          <div class="Credit">
+            <button class="credit" id="creditbutton" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">만든 이들 & 참고문헌</button>
+            <div id="light" class="white_content">서울대학교 학생심리건강지원단 11기<br>온라인 프로젝트: 심리테스트 팀<br><br>&lt감독&gt<br>고현빈<br><br>&lt디자인&gt<br>김지윤, 최인서<br><br>&lt개발&gt<br>강민하, 이지수, 조명근<br><br>&lt스토리&gt<br>김영훈, 봉혜언, 손연수, 황윤하<br><br>&lt문항구성&gt<br>김보민, 남윤빈<br><br>&lt배경음악&gt<br>강민하 - Shining Dream<br><br>&ltReference&gt<br>이명희. (2009). 자기결정성이론에 근거한<br>한국형 기본 심리 욕구 척도 개발 및 타당화.<br>이화여자대학교 석사학위논문<br>by<br>Creative Connons License<br>CC BY-NC
+              <button class="back" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">닫기</button>
+            </div>
+            <div id="fade" class="black_overlay"></div>
+          </div>
+          <div class="ResultPage">
+            <button class="resultpage_2" id="resultbutton_2">상자 열어보기</button>
+          </div>
+      </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>

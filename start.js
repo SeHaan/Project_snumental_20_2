@@ -3,8 +3,12 @@ let aut = 0;
 let rel = 0;
 let com = 0;
 
+let des = 0;
+
+// 중복 제출 방지 플래그
 var doubling = false;
 
+// 실행부
 window.onload = function() {
 
     slideIndex = 1;
@@ -31,6 +35,9 @@ window.onload = function() {
     var next_4 = document.getElementById('next_4'); next_4.addEventListener('click', Next);
     var next_5 = document.getElementById('next_5'); next_5.addEventListener('click', Next);
     var next_6 = document.getElementById('next_6'); next_6.addEventListener('click', Next);
+    var next_7 = document.getElementById('next_7'); next_7.addEventListener('click', Next);
+    var next_8 = document.getElementById('next_8'); next_8.addEventListener('click', Next);
+    var next_9 = document.getElementById('next_9'); next_9.addEventListener('click', Next);
     function Next() {if(doublecheck()) return; clickevent();}
 
     // Page 5 : rel1, m = 2.938, s = 0.666
@@ -122,6 +129,60 @@ window.onload = function() {
     function Aut3s2() {if(doublecheck()) return; aut += normalize(3, 2.788, 0.78); clickevent();}
     function Aut3s3() {if(doublecheck()) return; aut += normalize(2, 2.788, 0.78); clickevent();}
     function Aut3s4() {if(doublecheck()) return; aut += normalize(1, 2.788, 0.78); clickevent();}
+
+    // First Result : aut. com. rel.
+    var giftresult = document.getElementById('giftresult'); giftresult.addEventListener('click', FirstResult);
+    function FirstResult() {
+        if(doublecheck()) return;
+        var score = [aut, com, rel];
+        var page = calculate(score);
+        plusSlides(page);
+        semiclickevent(page);
+    }
+
+    // Gift
+    var resaut1 = document.getElementById('resaut1'); resaut1.addEventListener('click', Resaut1);
+    var resaut2 = document.getElementById('resaut2'); resaut2.addEventListener('click', Resaut2);
+    var resaut3 = document.getElementById('resaut3'); resaut3.addEventListener('click', Resaut3);
+    var resaut4 = document.getElementById('resaut4'); resaut4.addEventListener('click', Resaut4);
+    var resaut5 = document.getElementById('resaut5'); resaut5.addEventListener('click', Resaut5);
+
+    var rescom1 = document.getElementById('rescom1'); rescom1.addEventListener('click', Rescom1);
+    var rescom2 = document.getElementById('rescom2'); rescom2.addEventListener('click', Rescom2);
+    var rescom3 = document.getElementById('rescom3'); rescom3.addEventListener('click', Rescom3);
+    var rescom4 = document.getElementById('rescom4'); rescom4.addEventListener('click', Rescom4);
+    var rescom5 = document.getElementById('rescom5'); rescom5.addEventListener('click', Rescom5);
+
+    var resrel1 = document.getElementById('resrel1'); resrel1.addEventListener('click', Resrel1);
+    var resrel2 = document.getElementById('resrel2'); resrel2.addEventListener('click', Resrel2);
+    var resrel3 = document.getElementById('resrel3'); resrel3.addEventListener('click', Resrel3);
+    var resrel4 = document.getElementById('resrel4'); resrel4.addEventListener('click', Resrel4);
+    var resrel5 = document.getElementById('resrel5'); resrel5.addEventListener('click', Resrel5);
+
+    function Resaut1() {if(doublecheck()) return; des = 12; ending();}
+    function Resaut2() {if(doublecheck()) return; des = 14; ending();}
+    function Resaut3() {if(doublecheck()) return; des = 13; ending();}
+    function Resaut4() {if(doublecheck()) return; des = 2; ending();}
+    function Resaut5() {if(doublecheck()) return; des = 11; ending();}
+
+    function Rescom1() {if(doublecheck()) return; des = 10; ending();}
+    function Rescom2() {if(doublecheck()) return; des = 4; ending();}
+    function Rescom3() {if(doublecheck()) return; des = 7; ending();}
+    function Rescom4() {if(doublecheck()) return; des = 15; ending();}
+    function Rescom5() {if(doublecheck()) return; des = 1; ending();}
+
+    function Resrel1() {if(doublecheck()) return; des = 3; ending();}
+    function Resrel2() {if(doublecheck()) return; des = 5; ending();}
+    function Resrel3() {if(doublecheck()) return; des = 6; ending();}
+    function Resrel4() {if(doublecheck()) return; des = 8; ending();}
+    function Resrel5() {if(doublecheck()) return; des = 9; ending();}
+
+    var resultbutton = document.getElementById('resultbutton'); resultbutton.addEventListener('click', Next);
+
+    var resultbutton_2 = document.getElementById('resultbutton_2'); resultbutton_2.addEventListener('click', Result);
+    function Result() {
+        resulting();
+    }
 };
 
 function plusSlides(n) {
@@ -147,6 +208,21 @@ function showSlides(n) {
 
 function clickevent() {
     plusSlides(1); console.log("aut : " + aut + ", com : " + com + ", rel : " + rel);
+    doubling = false;
+    window.scrollTo(0, 50);
+}
+
+function semiclickevent(res) {
+    console.log("result of test 1 : " + res);
+    doubling = false;
+    window.scrollTo(0, 50);
+}
+
+function ending() {
+    var score = [aut, com, rel];
+    var page = calculate(score);
+    plusSlides(4-page)
+    console.log("ending, des : " + des);
     doubling = false;
     window.scrollTo(0, 50);
 }
@@ -197,4 +273,8 @@ function fac(n) { // 팩토리얼 값을 구하는 재귀함수
     } else {
         return n * fac(n - 1);
     }
+}
+
+function resulting() {
+    location.replace("test/result.html");
 }

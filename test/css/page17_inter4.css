@@ -1,0 +1,171 @@
+.inter4_text1 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 280px;
+    height: auto;
+    left: 20px;
+    top: 110px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.inter4_text2 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 17px;
+    width: 280px;
+    height: auto;
+    left: 20px;
+    top: 137px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+#Cloud_Black_Smile {
+    left: 90px;
+    top: 220px;
+    position: absolute;
+    z-index: 2;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.Dialogue_6 {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    width: 220px;
+    height: 100px;
+    left: 35px;
+    top: 183px;
+    position:absolute;
+    z-index: 1;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.dialogue_6 {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+    width: 220px;
+    height: auto;
+    z-index: 3;
+
+    left: 0px;
+    top: 20px;
+    position: absolute;
+}
+
+#ball_6 {
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 16px;
+    z-index: 2;
+    transform:rotate(0deg);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1);
+}
+
+.giftresult {
+    text-align: center;
+    width: 160px;
+    height: 42px;
+    border: 2px dashed #6b97a3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 80px;
+    top: 390px;
+    position: absolute;
+    z-index: 4;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.giftresult:hover {background-color: #d7e8ec;}
+.giftresult:active {background-color: #d7e8ec;}

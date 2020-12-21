@@ -1,0 +1,217 @@
+.rescom_text1 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 110px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.rescom_text2 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 170px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+/*selections*/
+#Rescom1 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 234px;
+    position:absolute;
+    z-index: 3;
+}
+
+#rescom1 {
+    margin: 0px auto;
+    text-align: center;
+    left: 0px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#rescom1_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: 190px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Rescom2 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 318px;
+    position:absolute;
+    z-index: 3;
+}
+
+#rescom2 {
+    margin: 0px auto;
+    text-align: center;
+    left: 20px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#rescom2_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: -30px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Rescom3 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 402px;
+    position:absolute;
+    z-index: 3;
+}
+
+#rescom3 {
+    margin: 0px auto;
+    text-align: center;
+    left: 0px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#rescom3_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: 190px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Rescom4 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 486px;
+    position:absolute;
+    z-index: 3;
+}
+
+#rescom4 {
+    margin: 0px auto;
+    text-align: center;
+    left: 20px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#rescom4_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: -30px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Rescom5 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 570px;
+    position:absolute;
+    z-index: 3;
+}
+
+#rescom5 {
+    margin: 0px auto;
+    text-align: center;
+    left: 0px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#rescom5_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: 200px;
+    top: 0px;
+    position:absolute;
+    z-index: 4;
+}
+
+#Rescom1, #Rescom2, #Rescom3, #Rescom4, #Rescom5 {
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+}

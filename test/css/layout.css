@@ -97,6 +97,17 @@ img {vertical-align: middle;}
   z-index: 1;
 }
 
+.selection_g {
+  text-align: center;
+  width: 240px;
+  height: 72px;
+  border-radius: 50px;
+  background-color: #ffffffa2;
+  color: #48656D;
+  font-family: 'Gamja Flower', cursive;
+  z-index: 1;
+}
+
 .nextbutton {
   text-align: center;
   width: 120px;
@@ -113,6 +124,8 @@ img {vertical-align: middle;}
 .selection:active {background-color: #8d999c;}
 .selection_b:hover {background-color: #8d999c;}
 .selection_b:active {background-color: #8d999c;}
+.selection_g:hover {background-color: #8d999c;}
+.selection_g:active {background-color: #8d999c;}
 .nextbutton:hover {background-color: #d7e8ec;}
 .nextbutton:active {background-color: #d7e8ec;}
 

@@ -1,0 +1,217 @@
+.resaut_text1 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 90px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+.resaut_text2 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 170px;
+    position:absolute;
+    z-index: 3;
+
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s;
+    -moz-animation-fill-mode: forwards;
+}
+
+/*selections*/
+#Resaut1 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 234px;
+    position:absolute;
+    z-index: 3;
+}
+
+#resaut1 {
+    margin: 0px auto;
+    text-align: center;
+    left: 0px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#resaut1_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: 190px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Resaut2 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 318px;
+    position:absolute;
+    z-index: 3;
+}
+
+#resaut2 {
+    margin: 0px auto;
+    text-align: center;
+    left: 20px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#resaut2_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: -30px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Resaut3 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 402px;
+    position:absolute;
+    z-index: 3;
+}
+
+#resaut3 {
+    margin: 0px auto;
+    text-align: center;
+    left: 0px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#resaut3_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: 190px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Resaut4 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 486px;
+    position:absolute;
+    z-index: 3;
+}
+
+#resaut4 {
+    margin: 0px auto;
+    text-align: center;
+    left: 20px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#resaut4_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: -30px;
+    top: 0px;
+    position:absolute;
+    z-index: 5;
+}
+
+#Resaut5 {
+    margin: 0px auto;
+    text-align: center;
+    width: 260px;
+    height: auto;
+    left: 30px;
+    top: 570px;
+    position:absolute;
+    z-index: 3;
+}
+
+#resaut5 {
+    margin: 0px auto;
+    text-align: center;
+    left: 0px;
+    top: 9px;
+    position:absolute;
+    z-index: 4;
+}
+
+#resaut5_pic {
+    margin: 0px auto;
+    text-align: center;
+    left: 200px;
+    top: 0px;
+    position:absolute;
+    z-index: 4;
+}
+
+#Resaut1, #Resaut2, #Resaut3, #Resaut4, #Resaut5 {
+    opacity: 0;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+}

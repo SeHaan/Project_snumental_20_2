@@ -1,0 +1,101 @@
+.Result_Text1 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+    height: auto;
+    left: 10px;
+    top: 60px;
+    position:absolute;
+}
+
+.Result_Text2 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+    height: auto;
+    left: 10px;
+    top: 175px;
+    position:absolute;
+}
+
+.Result_Text3 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+    height: auto;
+    left: 10px;
+    top: 312px;
+    position:absolute;
+}
+
+.Result_Text4 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+    height: auto;
+    left: 10px;
+    top: 475px;
+    position:absolute;
+}
+
+.Result_Text5 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+    height: auto;
+    left: 10px;
+    top: 535px;
+    position:absolute;
+}
+
+
+.credit {
+    text-align: center;
+    width: 160px;
+    height: 42px;
+    border: 2px dashed #6b97a3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 80px;
+    top: 625px;
+    position: absolute;
+    z-index: 4;
+}
+
+.resultpage_2:hover {background-color: #d7e8ec;}
+.resultpage_2:active {background-color: #d7e8ec;}
+
+.resultpage_2 {
+    text-align: center;
+    width: 160px;
+    height: 42px;
+    border: 2px dashed #6b97a3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 80px;
+    top: 680px;
+    position: absolute;
+    z-index: 4;
+}
+
+.credit:hover {background-color: #d7e8ec;}
+.credit:active {background-color: #d7e8ec;}
+.resultpage_2:hover {background-color: #d7e8ec;}
+.resultpage_2:active {background-color: #d7e8ec;}
