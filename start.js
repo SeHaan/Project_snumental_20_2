@@ -15,6 +15,10 @@ window.onload = function() {
     showSlides(slideIndex);
 
     var audio = new Audio('Shining Dream.mp3')
+    //audio.addEventListener('ended', function() {
+    //    this.currentTime = 0;
+    //    this.play();
+    //}, false);
 
     var start = document.getElementById('start');
     start.addEventListener('click', startTest);
@@ -274,21 +278,51 @@ function fac(n) { // 팩토리얼 값을 구하는 재귀함수
 
 function resulting(des) {
     switch(des) {
-        case 1: location.replace("test/res_1.html");
-        case 2: location.replace("test/res_2.html");
-        case 3: location.replace("test/res_3.html");
-        case 4: location.replace("test/res_4.html");
-        case 5: location.replace("test/res_5.html");
-        case 6: location.replace("test/res_6.html");
-        case 7: location.replace("test/res_7.html");
-        case 8: location.replace("test/res_8.html");
-        case 9: location.replace("test/res_9.html");
-        case 10: location.replace("test/res_10.html");
-        case 11: location.replace("test/res_11.html");
-        case 12: location.replace("test/res_12.html");
-        case 13: location.replace("test/res_13.html");
-        case 14: location.replace("test/res_14.html");
-        case 15: location.replace("test/res_15.html");
+        case 1:
+            location.replace("test/res_1.html");
+            break;
+        case 2:
+            location.replace("test/res_2.html");
+            break;
+        case 3:
+            location.replace("test/res_3.html");
+            break;
+        case 4:
+            location.replace("test/res_4.html");
+            break;
+        case 5:
+            location.replace("test/res_5.html");
+            break;
+        case 6:
+            location.replace("test/res_6.html");
+            break;
+        case 7:
+            location.replace("test/res_7.html");
+            break;
+        case 8:
+            location.replace("test/res_8.html");
+            break;
+        case 9:
+            location.replace("test/res_9.html");
+            break;
+        case 10:
+            location.replace("test/res_10.html");
+            break;
+        case 11:
+            location.replace("test/res_11.html");
+            break;
+        case 12:
+            location.replace("test/res_12.html");
+            break;
+        case 13:
+            location.replace("test/res_13.html");
+            break;
+        case 14:
+            location.replace("test/res_14.html");
+            break;
+        case 15:
+            location.replace("test/res_15.html");
+            break;
     }
 
     //location.replace("test/result.html");
