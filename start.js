@@ -181,7 +181,8 @@ window.onload = function() {
 
     var resultbutton_2 = document.getElementById('resultbutton_2'); resultbutton_2.addEventListener('click', Result);
     function Result() {
-        resulting();
+        console.log("ending, des : " + des);
+        resulting(des);
     }
 };
 
@@ -275,6 +276,24 @@ function fac(n) { // 팩토리얼 값을 구하는 재귀함수
     }
 }
 
-function resulting() {
-    location.replace("test/result.html");
+function resulting(des) {
+    switch(des) {
+        case 1: location.replace("test/res_1.html");
+        case 2: location.replace("test/res_2.html");
+        case 3: location.replace("test/res_3.html");
+        case 4: location.replace("test/res_4.html");
+        case 5: location.replace("test/res_5.html");
+        case 6: location.replace("test/res_6.html");
+        case 7: location.replace("test/res_7.html");
+        case 8: location.replace("test/res_8.html");
+        case 9: location.replace("test/res_9.html");
+        case 10: location.replace("test/res_10.html");
+        case 11: location.replace("test/res_11.html");
+        case 12: location.replace("test/res_12.html");
+        case 13: location.replace("test/res_13.html");
+        case 14: location.replace("test/res_14.html");
+        case 15: location.replace("test/res_15.html");
+    }
+
+    //location.replace("test/result.html");
 }

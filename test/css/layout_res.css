@@ -1,0 +1,85 @@
+.testQ_res {
+    width: 320px;
+    height: 790px;
+    position: relative;
+    margin: auto;
+    background-color: #C4E3EC;
+}
+
+.resgift {
+    left: 0px;
+    top: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+.restext {
+    text-align: center;
+    width: 320px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.youtubetext {
+    text-align: center;
+    width: 320px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+
+    font-size: 19px;
+}
+
+.youtube {
+    left: 135px;
+    position: absolute;
+    z-index: 3;
+}
+
+#text_1, #text_2, #text_4, #text_5, #text_6, #text_7, #text_8, #text_13 {
+    top: 350px;
+    position: absolute;
+}
+
+#text_3, #text_9, #text_10, #text_11, #text_12, #text_14 {
+    top: 370px;
+    position: absolute;
+}
+
+#text_15 {
+    top: 360px;
+    position: absolute;
+}
+
+#youtext_1 {top: 555px; position: absolute;}
+#youtext_2 {top: 625px; position: absolute;}
+#youtext_3 {top: 555px; position: absolute;}
+#youtext_4 {top: 555px; position: absolute;}
+#youtext_5 {top: 555px; position: absolute;}
+#youtext_6 {top: 565px; position: absolute;}
+#youtext_7 {top: 585px; position: absolute;}
+#youtext_8 {top: 555px; position: absolute;}
+#youtext_9 {top: 595px; position: absolute;}
+#youtext_10 {top: 595px; position: absolute;}
+#youtext_11 {top: 595px; position: absolute;}
+#youtext_12 {top: 615px; position: absolute;}
+#youtext_13 {top: 660px; position: absolute;}
+#youtext_14 {top: 640px; position: absolute;}
+#youtext_15 {top: 690px; position: absolute;}
+
+#youtube_1 {top: 620px; position: absolute;}
+#youtube_2 {top: 690px; position: absolute;}
+#youtube_3 {top: 620px; position: absolute;}
+#youtube_4 {top: 620px; position: absolute;}
+#youtube_5 {top: 620px; position: absolute;}
+#youtube_6 {top: 630px; position: absolute;}
+#youtube_7 {top: 650px; position: absolute;}
+#youtube_8 {top: 620px; position: absolute;}
+#youtube_9 {top: 660px; position: absolute;}
+#youtube_10 {top: 660px; position: absolute;}
+#youtube_11 {top: 660px; position: absolute;}
+#youtube_12 {top: 680px; position: absolute;}
+#youtube_13 {top: 725px; position: absolute;}
+#youtube_14 {top: 705px; position: absolute;}
+#youtube_15 {top: 740px; position: absolute;}

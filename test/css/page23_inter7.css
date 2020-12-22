@@ -8,15 +8,15 @@
     top: 110px;
     position:absolute;
 
-    animation-name: smaller;
+    animation-name: textsmaller;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     
-    -webkit-animation-name: fadein;
+    -webkit-animation-name: textsmaller;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
 
-    -moz-animation-name: fadein;
+    -moz-animation-name: textsmaller;
     -moz-animation-duration: 1s;
     -moz-animation-fill-mode: forwards;
 }
@@ -172,17 +172,17 @@
 .resultpage:hover {background-color: #d7e8ec;}
 .resultpage:active {background-color: #d7e8ec;}
 
-@keyframes smaller {
+@keyframes textsmaller {
     from{scale: 10;}
     to{scale: 1;}
 }
 
-@-webkit-keyframes smaller {
+@-webkit-keyframes textsmaller {
     from{scale: 10;}
     to{scale: 1;}
 }
 
-@-moz-keyframes smaller {
+@-moz-keyframes textsmaller {
     from{scale: 10;}
     to{scale: 1;}
 }
