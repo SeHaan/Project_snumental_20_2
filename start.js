@@ -15,10 +15,6 @@ window.onload = function() {
     showSlides(slideIndex);
 
     var audio = new Audio('Shining Dream.mp3')
-    audio.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-    }, false);
 
     var start = document.getElementById('start');
     start.addEventListener('click', startTest);
